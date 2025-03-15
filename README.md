@@ -1,55 +1,5 @@
 # CODIGOS-DE-ERROR-AUTOMOVILES
 TODO TIPO DE CODIGOS DE ERROR DE UN AUTOMOVIL Y SUS SOLUCIONES
-            border-radius: 10px;
-            max-width: 80%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .codigo-error:hover {
-            transform: scale(1.05);
-        }
-        .codigo-error h2 {
-            color: #e74c3c;
-            font-size: 1.8em;
-        }
-        .codigo-error p {
-            font-size: 1.1em;
-            line-height: 1.6em;
-        }
-        .codigo-error p strong {
-            color: #34495e;
-        }
-        footer {
-            background-color: #34495e;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        footer p {
-            font-size: 1em;
-            margin: 0;
-        }
-    </style>
-    <script>
-        // Función para filtrar los errores mediante el buscador
-        function buscarError() {
-            var input = document.getElementById('search-bar');
-            var filter = input.value.toUpperCase();
-            var codigoErrores = document.querySelectorAll('.codigo-error');
-            
-            codigoErrores.forEach(function(codigoError) {
-                var titulo = codigoError.querySelector('h2').innerText.toUpperCase();
-                if (titulo.indexOf(filter) > -1) {
-                    codigoError.style.display = "";
-                } else {
-                    codigoError.style.display = "none";
-                }
-            });
-        }
-    </script>
-</head>
-<body>
-
 <header>
     <h1>Códigos de Error - Mecatrónica Automotriz</h1>
 </header>
